@@ -1,0 +1,225 @@
+body {
+    margin-top: .5%;
+    margin-bottom: .5%;
+    padding: .5% ;
+}
+
+.modelwindow {
+    padding: 1em;
+    height: 200px;
+    width: 200px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 20pf;
+    border-radius: 15px;
+    border: none;
+    
+}
+
+.container {
+
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75px 1fr;
+    box-sizing: border-box;
+
+
+}
+
+
+.header {
+    display: grid;
+    height: 75px;
+    padding-left: 5%;
+    padding-right: 5%;
+    column-gap: 10px;
+    grid-template-columns: .5fr 2fr .5fr;
+    grid-template-rows: 1fr;
+    background-color: rgb(236, 237, 234);
+    align-items: center;
+    text-align: center;
+
+}
+
+.leftheader {
+    vertical-align: middle;
+    height: 60px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: system-ui;
+    font-weight: bold;
+    background-color: rgb(236, 237, 234);
+    text-align-last:left;
+
+    
+}
+
+.mybutton {
+    display: inline-block;
+    font-size: 13px;
+    font-family: system-ui;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 120px;
+    background-color: rgb(139, 205, 205);
+    cursor: pointer;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+
+
+}
+
+
+.mybutton[disabled] {
+    display: inline-block;
+    font-size: 13px;
+    font-family: system-ui;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 120px;
+    background-color: rgb(139, 205, 205);
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.616);
+    text-align: center;
+    text-decoration: none;
+
+
+}
+
+
+.mybutton[enabled]:hover {
+    background-color: grey;
+}
+
+.mybutton[enabled]:active {
+    background-color: rgba(66, 133, 244, 1);
+    transform: translateY(1px)
+}
+
+.table1{
+
+    margin-top: 10px;
+    width: 95%;
+
+
+}
+
+.windowline{    
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 2px;
+    border: 1px solid rgb(139, 205, 205);
+    margin-bottom: 10px;
+    overflow: auto;
+    max-height: 60vh;
+}
+
+.table2{
+    width: 100%;
+
+
+
+}
+
+
+.hidden{
+    width: 60%;
+    display: none;
+    margin: 10px;
+
+}
+
+
+td{
+    text-align: center;
+    font-family: system-ui;
+    font-size: 13px;
+}
+
+tr{
+    height: 30px;
+
+}
+
+
+.tablebutton{
+    display: inline-block;
+    font-size: 13px;
+    font-family: system-ui;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 100%;
+    background-color: rgb(88, 88, 88);
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+
+}
+
+.tablebutton:hover {
+    background-color: grey;
+}
+
+.tablebutton:active {
+    background-color: rgba(66, 133, 244, 1);
+    transform: translateY(1px)
+}
+
+
+.inputline{
+    border: .5px solid rgb(185, 182, 182);
+    background-color: rgb(239, 240, 240);
+    padding: 2%;
+    width: 96%;
+}
+
+.inputline1{
+    border: .5px solid rgb(185, 182, 182);
+    background-color: rgb(239, 240, 240);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+}
+
+
+
+.dropdown{
+    height: 50px;
+}
+
+
+.table2titles{
+    text-align: left;
+    height: 50px;
+    width: 100px;
+
+}
+
+
+.box {
+    border: solid rgb(230, 191, 191);
+    border-width: 2px 2px 2px 2px;
+    display: inline-block;
+    padding: 3px;
+  }
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+

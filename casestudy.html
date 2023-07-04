@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href = "style.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Interface</title>
+
+</head>
+<body>
+
+    <dialog class= "modelwindow" id="favDialog">
+        <div style="height: 80px; text-align: center; padding-top: 50px;">
+            <label id = "model1"> <center >New User</center></label>
+            <label id = "model2"> <center >Saved Succesfully</center></label>    
+        </div>
+        <div>
+            <form style="padding-left: 40px;" method="dialog">
+                <button class="mybutton">OK</button>
+            </form>
+        </div>
+
+    </dialog>
+
+
+    <div class="container">
+        <div class="header">
+            <div>
+                <button  id="showButton" class="mybutton">
+                    + New User
+                </button>
+            </div>
+            <div align="left" padding-right="50px">
+                <input type="checkbox" name="hideCheckbox" id="hideCheckbox">
+                <label style="font-family: system-ui;  ">Hide Disable User</label>
+            </div>
+            <div>
+                <button disabled class="mybutton" id="saveButton">
+                    Save User
+                </button>
+            </div>
+        </div>
+        <div style="display: flex">
+            <div class="windowline">
+                <table class="table1" align="center" id="myTable">
+                    <thead>
+                        <td>
+                            <button class="tablebutton" value="0">ID</button>
+                        </td>
+                        <td>
+                            <button class="tablebutton" value="1">User Name</button>
+                        </td>
+                        <td>
+                            <button class="tablebutton" value="2">Email</button>
+                        </td>
+                        <td>
+                            <button class="tablebutton" id="EnabledButton" value="3">Enabled</button>
+                        </td>
+                    </thead>
+
+
+                </table>
+            </div>
+            <div class="hidden" id="hiddenDiv" >
+                <table class="table2">
+                    <tr>
+                        <td style="height: 60px;"class="leftheader"colspan="3">
+                            New User
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table2titles">Username:</td>
+                        <td colspan="2">
+                            <input class="inputline" placeholder="Username" id="Username">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table2titles">Display Name:</td>
+                        <td colspan="2">
+                            <input class="inputline" placeholder="Display Name" id="Displayname">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table2titles"> Phone:</td>
+                        <td colspan="2">
+                            <input class="inputline" placeholder="Phone" id="Phone">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table2titles">Email:</td>
+                        <td colspan="2">
+                            <input class="inputline" placeholder="Email" id="Email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table2titles">User Roles:</td>
+                        <td colspan="2">
+                            <select class= "inputline1" name="userrole" id="Userrole">
+                                <option value="" disabled selected hidden>Sellect User Role</option>
+                                <option style="font-size:15px; " value="Admin">Admin</option>
+                                <option style="font-size:15px; "value="User">User</option>
+                                <option style="font-size:15px; " value="Superadmin">SuperAdmin</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table2titles">Enabled:</td>
+                        <td>
+                            <input class="box"type="checkbox" name="Enabled" id="Enabled">
+                        </td>
+                        <td>
+                            <button style="width: 70px; float: right;" id="hideButton"class="mybutton">
+                                Back
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
